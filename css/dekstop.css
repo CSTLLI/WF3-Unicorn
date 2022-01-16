@@ -10,3 +10,91 @@
 /* Updated: 2022/01/12 13:55:56 vcastell                |__/     \__/|__/      \______/   */
 /*                                                                    				      */
 /******************************************************************************************/
+
+/* ################# DEKSTOP */
+
+header .nav-dekstop{
+	background-color: var(--gray-dark);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	align-items: center;
+	display: none;
+}
+
+header .nav-dekstop ul{
+	display: flex;
+	gap: 20px;
+}
+
+header .nav-dekstop ul li, 
+header .nav-dekstop ul li a{
+	font-weight: 700;
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media only screen and (min-width: 1020px){
+
+	header .nav-mobile{
+		display: none;
+	}
+	
+	header .nav-dekstop{
+		display: flex;
+	}
+
+	h1{
+		font-size: 3.6rem;
+	}
+
+	/* ### HEADER ### */
+
+	#unicorn{
+		width: 40%;
+	}
+
+	/* ### MAIN ### */
+
+	#btn-transparent{
+		display: none;
+	}
+
+	/* ### FOOTER ### */
+
+	.request{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		padding: 60px;
+	}
+
+	.request h2{
+		font-size: 2.6rem;
+	}
+
+	.request img{
+		width: 50%;
+	}
+
+	.desc{
+		margin: auto;
+	}
+
+	.desc div{
+		padding-right: 40%;
+	}
+
+	footer nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	footer nav i{
+		font-size: 2rem;
+		border: none;
+	}
+}
