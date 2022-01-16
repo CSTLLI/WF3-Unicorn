@@ -35,6 +35,16 @@ header .nav-dekstop ul li a{
 	color: black;
 }
 
+header .nav-dekstop img:hover{
+	transition: 2s ease;
+	transform: rotateZ(360deg);
+}
+
+header .nav-dekstop ul li:hover{
+	transform: translateY(-10px);
+	transition: 250ms ease;
+}
+
 .container-dekstop{
 	width: 70%;
 	margin: auto;
@@ -98,7 +108,9 @@ header .nav-dekstop ul li a{
 		justify-content: flex-end;
 	}
 
+	footer nav a i,
 	footer nav i{
+		color: black;
 		font-size: 2rem;
 		border: none;
 	}
