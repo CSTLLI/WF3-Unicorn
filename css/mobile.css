@@ -22,6 +22,10 @@
     --font-title: 'Libre Baskerville', serif;
 }
 
+body{
+	background-color: var(--gray-light);
+}
+
 .container-mobile{
 	padding: 20px;
 	text-align: center;
