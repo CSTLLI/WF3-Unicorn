@@ -13,6 +13,8 @@
 
 /* ################# DEKSTOP */
 
+/* HEADER */
+
 header .nav-dekstop{
 	background-color: var(--gray-dark);
 	display: flex;
@@ -45,6 +47,23 @@ header .nav-dekstop ul li:hover{
 	transition: 250ms ease;
 }
 
+/* MAIN */
+
+main .main-dekstop{
+	display: none;
+}
+
+main .main-dekstop .cards{
+	position: relative;
+}
+
+main .main-dekstop .cards p{
+	position: absolute;
+	top: 75%;
+	padding-left: 20px;
+	padding-right: 70%;
+}
+
 .container-dekstop{
 	width: 70%;
 	margin: auto;
@@ -54,12 +73,17 @@ header .nav-dekstop ul li:hover{
 
 @media only screen and (min-width: 1020px){
 
-	header .nav-mobile{
+	header .nav-mobile,
+	main .main-mobile{
 		display: none;
 	}
 	
 	header .nav-dekstop{
 		display: flex;
+	}
+
+	main .main-dekstop{
+		display: block;
 	}
 
 	h1{
